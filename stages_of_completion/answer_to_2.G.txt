@@ -1,4 +1,7 @@
 Lil q&a time:
 Q: how is it possible that ProductService uses methods like save and findAll if ProductRepository is empty?
 
-A: this works because of Spring Data JPA. the ProductRepository interface extends JpaRepository, which already contains these methods. when the application starts, spring automatically creates an implementation for this interface. because of that, ProductService can call methods like save and findAll, and spring handles the database operations for me or well us. this way, we don’t have to write the basic CRUD logic ourselves, which makes development much and much easier
+A: this works because of Spring Data JPA. the ProductRepository interface extends JpaRepository, which already contains these methods
+when the application starts, spring automatically creates an implementation for this interface
+because of that, ProductService can call methods like save and findAll, and spring handles the database operations for me or well us
+this way, we don’t have to write the basic CRUD logic ourselves, which makes development much and much easier
